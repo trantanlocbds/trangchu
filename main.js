@@ -1,9 +1,12 @@
-/* ═══════════════════════════════════════════
-   TRẦN TẤN LỘC – Nam Long Group
-   main.js
-═══════════════════════════════════════════ */
-
 document.addEventListener('DOMContentLoaded', () => {
+
+  // 🔥 Redirect root -> /trangchu/
+  if (
+    window.location.pathname === '/' ||
+    window.location.pathname === '/index.html'
+  ) {
+    window.location.replace('/trangchu/');
+  }
 
   /* ── Scroll Reveal ── */
   const revealObserver = new IntersectionObserver((entries) => {
@@ -18,11 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.reveal, .reveal-stagger')
     .forEach(el => revealObserver.observe(el));
 
-
   /* ── Active year in footer ── */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
 
   /* ── Smooth scroll for anchor links ── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -34,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
 
   /* ── Floating scroll-to-top button ── */
   const scrollBtn = document.getElementById('scrollTop');
