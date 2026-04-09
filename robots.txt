@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trantanlocbds.github.io/trangchu/sitemap.xml
