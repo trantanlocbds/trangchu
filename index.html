@@ -5,26 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Trần Tấn Lộc BĐS Nam Long Cần Thơ | Tư vấn nhà đất uy tín</title>
-  <meta name="description" content="Trần Tấn Lộc – chuyên viên bất động sản Nam Long tại Cần Thơ. Tư vấn căn hộ, đất nền, nhà phố uy tín, pháp lý rõ ràng." />
+  <meta name="description" content="Trần Tấn Lộc – Chuyên viên bất động sản Nam Long Group. Tư vấn căn hộ, đất nền, nhà phố tại Cần Thơ." />
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://trantanlocbds.github.io/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Trần Tấn Lộc – Chuyên Viên Nam Long Group" />
+  <meta property="og:description" content="Tư vấn căn hộ, đất nền, nhà phố – Sàn BĐS Nam Long Cần Thơ" />
+  <meta property="og:image" content="avt.jpg" />
 
-  <!-- Favicon -->
+  <!-- TITLE -->
+  <title>Trần Tấn Lộc – Chuyên Viên Nam Long Group</title>
+
+  <!-- ✅ FAVICON (THÊM) -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/avt.jpg">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Trần Tấn Lộc BĐS Nam Long Cần Thơ">
-  <meta property="og:description" content="Tư vấn căn hộ, đất nền, nhà phố tại Cần Thơ – Nam Long Group">
-  <meta property="og:image" content="https://trantanlocbds.github.io/avt.jpg">
-  <meta property="og:url" content="https://trantanlocbds.github.io/">
-  <meta property="og:type" content="website">
+  <!-- ✅ FIX CANONICAL (SỬA) -->
+  <link rel="canonical" href="https://trantanlocbds.github.io/" />
 
-  <!-- Schema -->
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ STRUCTURED DATA (THÊM) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,79 +52,77 @@
   }
   </script>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <!-- STYLE GIỮ NGUYÊN -->
   <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #0b0b0b;
-      color: #fff;
-      text-align: center;
+    #scrollTop {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 99;
+      width: 42px;
+      height: 42px;
+      background: var(--gold-dim);
+      border: 1px solid rgba(201,168,76,0.4);
+      border-radius: 2px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.3s, transform 0.3s, background 0.3s;
+      pointer-events: none;
     }
-
-    .container {
-      padding: 40px 20px;
-    }
-
-    img.avatar {
-      width: 120px;
-      border-radius: 50%;
-      border: 3px solid #c9a84c;
-    }
-
-    h1 {
-      margin: 15px 0 5px;
-      font-size: 28px;
-    }
-
-    p {
-      opacity: 0.8;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background: #c9a84c;
-      color: #000;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    .btn-outline {
-      border: 1px solid #c9a84c;
-      color: #c9a84c;
-      background: transparent;
-    }
-
-    footer {
-      margin-top: 40px;
-      opacity: 0.6;
-      font-size: 14px;
-    }
+    #scrollTop.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    #scrollTop:hover { background: var(--gold); }
+    #scrollTop svg { width: 16px; height: 16px; stroke: var(--gold-light); }
+    #scrollTop:hover svg { stroke: var(--dark); }
   </style>
 </head>
 
 <body>
 
-<div class="container">
-  <img src="avt.jpg" class="avatar" alt="Trần Tấn Lộc">
+<!-- ════ HERO ════ -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="corner-deco tl"></div>
+  <div class="corner-deco tr"></div>
+  <div class="corner-deco bl"></div>
+  <div class="corner-deco br"></div>
 
-  <h1>Trần Tấn Lộc</h1>
-  <p>Chuyên viên BĐS Nam Long – Cần Thơ</p>
+  <div class="hero-content">
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <img src="avt.jpg" alt="Trần Tấn Lộc" class="avatar-img" />
+      <div class="avatar-badge">Nam Long</div>
+    </div>
 
-  <a href="tel:0862518534" class="btn">📞 Gọi ngay</a>
-  <a href="https://www.facebook.com/profile.php?id=61587496221326" class="btn btn-outline" target="_blank">
-    💬 Facebook
-  </a>
-</div>
+    <div class="hero-role">Chuyên Viên Bất Động Sản</div>
+    <h1 class="hero-name">Trần Tấn <span>Lộc</span></h1>
+    <div class="hero-divider"></div>
+    <div class="hero-company">Nam Long Group</div>
+    <div class="hero-sub">Căn Hộ · Đất Nền · Nhà Phố</div>
+
+    <div class="phone-row">
+      <a href="tel:0862518534" class="phone-btn">0862 518 534</a>
+      <a href="tel:0907190638" class="phone-btn">0907 190 638</a>
+    </div>
+
+    <div class="social-row">
+      <a href="https://www.facebook.com/loc.tran.19042012" target="_blank" class="social-btn fb">Cá Nhân</a>
+      <a href="https://www.facebook.com/profile.php?id=61587496221326" target="_blank" class="social-btn page">Fanpage</a>
+      <a href="https://www.tiktok.com/@lc.trn.tn69" target="_blank" class="social-btn tt">TikTok</a>
+    </div>
+  </div>
+</section>
+
+<!-- (PHẦN DƯỚI GIỮ NGUYÊN HOÀN TOÀN NHƯ TRÍ) -->
 
 <footer>
-  © 2026 Trần Tấn Lộc – Nam Long Group
+  <div>&copy; <span id="year"></span> Trần Tấn Lộc · Nam Long Group</div>
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
